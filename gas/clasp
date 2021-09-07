@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+docker run --rm -ti \
+    -v "$(pwd)/.clasprc.json:/root/.clasprc.json" \
+    -v "$(pwd):/app" \
+    -w "/app" \
+    clasp $@
