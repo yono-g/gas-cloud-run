@@ -33,7 +33,7 @@ GCPプロジェクトを作成した後、GASのエディタ画面を開き、`�
 | リージョン | region | Cloud Tasksのキューが配置されているリージョン |
 | キュー名 | queueName | Cloud Tasksのキューの名前 |
 | ワーカーURL | workerUrl | Cloud RunサービスのURL |
-| デプロイメントID | deploymentId | GASのデプロイID<br>*後述のデプロイの後に設定する* |
+| デプロイメントID | deploymentId | GASのデプロイID<br>*後述の「スクリプトのデプロイ」の後に設定する* |
 | サービスアカウントEmail | serviceAccountEmail | Cloud Runサービスを実行する権限を持つサービスアカウントのEmailアドレス |
 
 ### スクリプトのデプロイ
@@ -49,5 +49,5 @@ GCPプロジェクトを作成した後、GASのエディタ画面を開き、`�
 GASのURL(デプロイID)を固定するため、次の手順でデプロイする:
 
 ```sh
-./clasp deploy -i ${DEPLOYMENT_ID}
+./clasp deploy -i 前回のデプロイID
 ```

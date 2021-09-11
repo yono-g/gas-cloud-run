@@ -3,7 +3,7 @@
 ### gcloud CLIの準備・ログイン
 
 ```sh
-cd .gcp/
+cd gcp/
 docker run -ti --name gcloud-config google/cloud-sdk:slim gcloud auth login # プロンプトに従う
 
 docker run --rm -ti --volumes-from gcloud-config -v "$(pwd):/app" -w "/app" google/cloud-sdk:slim # コンテナに入る
